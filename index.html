@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .sedans
+    {
+      background-color: hsl(31, 77%, 52%); 
+      display:flex table; 
+      align-items:center; 
+      border-radius:50; 
+    }
+    .suvs
+    {
+      background-color:  hsl(184, 100%, 22%); 
+      display:flex table; 
+      align-items:center; 
+      border-radius:50;
+    }
+    .luxury
+    {
+      background-color:hsl(179, 100%, 13%); 
+      display:flex table; 
+      align-items:center; 
+      border-radius:50; 
+    }
+    .cars
+    {
+      display: flex;
+      justify-content:center;
+      width: 80%; 
+      max-width: 1800px; 
+      margin: auto; 
+      border-radius: 15px;
+      align-items: center;
+
+    }
+    .text
+    {
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      text-align: left;
+      margin-left: 15px;
+      padding-left: 15px;
+    }
+    .texts
+    {
+      color: hsla(0, 0%, 100%, 0.75);
+       text-align:left; 
+       padding-left:15px; 
+       margin-left:15px;
+    }
+    .button,.buttons
+    {
+      text-align: center;
+      border-radius: 30px;
+      border: none;
+      background-color:white;
+      align-items:center;
+      margin: 10px 15px ;
+      padding: 10px 15px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-left:15%;
+    }
+    .button:hover
+    {
+      background-color: hsl(31, 77%, 52%);
+      border: 1px white;
+      color:white;
+      text-decoration: none;
+      transition: all 0.30s;
+    }
+    .buttons:hover{
+      background-color:  hsl(184, 100%, 22%);
+      background-color:  hsl(179, 100%, 13%);
+      border: 1px white;
+      color:white;
+      text-decoration: none;
+      transition: all 0.30s;
+    }
+    @media screen and (min-width:768px) {
+      .cars
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+      }  
+    }
+  </style>
+</head>
+<body>
+  <div class="cars">
+    <div class="sedans">
+      <img src="3-column-preview-card-component-main/images/icon-sedans.svg"
+                style="border-radius: 50%; align-items:center; margin: 30px;" width="100" height="100">
+       <h1 class="text"><b>SEDANS</b></h1>
+       <p class="texts">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.</p>
+         <button class="button">Learn more</button>
+    </div>
+    <div class="suvs">
+      <img src="/3-column-preview-card-component-main/images/icon-suvs.svg"
+               style="border-radius: 50%; align-items:center; margin: 30px;" width="100" height="100">
+        <h1 class="text"><b> SUVs</b></h1> 
+        <p class="texts"> Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+          and off-road adventures.</p> 
+          <button class="buttons">Learn more</a></button> 
+          
+    </div>
+    <div class="luxury">
+      <img src="/3-column-preview-card-component-main/images/icon-luxury.svg"
+                 style="border-radius: 50%; align-items:center; margin: 30px;" width="100" height="100">
+                 <h1 class="text"><b>LUXURY</b></h1>
+                 <P class="texts"> Cruise in the best car brands without the bloated prices.Enjoy the enhanced comfort of a luxury rental arrive in style</P>
+                <button class="buttons">Learn more</a></button>  
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
